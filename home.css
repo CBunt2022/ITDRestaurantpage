@@ -1,0 +1,247 @@
+/*	Chris  Bunting
+	Web design project 1
+	Home page CSS
+	ITD 210
+	9/25/2022 */
+	
+	/*most of the code from this pages will be used in following pages so they will have the same look*/
+	
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 100%;
+		width: 100%;
+		
+		}
+	
+	header{
+		background-color: #000000;
+		height: 30%;
+		width:100%;
+	}
+	
+	
+div > h1 {
+  font-size: 4.0em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div > h2 {
+  font-size: 2.8em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div > h3 {
+  font-size: 2.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 2.0em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding:20px;
+  }
+	
+	
+	/*restaurant logo*/
+	.logo {
+		text-align: center;
+		float: center;
+		width: 100%;
+	}
+	/*extra CSS for navigation area of page*/
+	.container {
+		background-color: #000000;
+		color: white;
+		padding: 15px; 
+		font-size: 25px;
+		width: 100%;
+	}
+	/*Contact us section and button code*/
+	
+	.Contus{
+		text-align:center;
+		width:100%;
+		padding: 15px;
+		color: white;
+		float: center;
+		background-color: #000000;
+	}
+	.Cus-btn{
+		text-align: center;
+		padding: 8px;
+		font-size: 20px;
+		background-color: #ffffff;
+		border-radius: 12px;
+		color: black;
+		text-decoration: none;
+		}
+	.Cus-btn:hover {
+		opacity: 0.6;
+		text-decoration: none;
+		}
+
+	
+	/*Main photograph image for the home page*/
+	.main-photo {
+		text-align: center;
+		float: center;
+		width: 100%;
+	}
+	/*Main section of the home page. contains welcome message*/
+	.words {
+		background-color: #D3D3D3;
+		padding:20px;
+		color: #000000;
+		float: center;
+		text-align: center;
+		}
+	
+	/* second area on page with open table reservation notice*/
+	.open {
+		background-color: #666666;
+		padding:15px;
+		color: white;
+		text-align: center;
+		}
+	/* code for open table button and link.  I wanted the link to open on a new page on desktop*/
+	.otable-btn {
+		background-color: red;
+		color: white;
+		font-size:20px;
+		padding:15px;
+		border-radius: 12px;
+		text-align:center;
+		text-decoration: none;
+		width:100%;
+		}
+	.otable-btn:hover {
+		opacity: 0.6;
+		text-decoration: none;
+		}
+	.otable-btn:visited {
+		background-color: red;
+		color: white;
+		font-size:20px;
+		padding:15px;
+		border-radius: 12px;
+		text-align:center;
+		text-decoration: none;
+		width:100%;
+		}
+	/*Code for footer area of page*/
+	.bot {  
+		
+		text-align: center;
+		margin: auto;
+		background-color: #000000;
+		padding: 10px;
+		display: inline-block;
+		width: 100%;	
+		bottom:0;
+		z-index: 1;
+		
+	}
+	
+	
+	.addr {
+		text-align: left;
+		background-color: #000000;
+		padding: 0px 0px 10px 10px;
+		display: flex;
+		align-items: center;
+		color: white;
+		float: left;
+		
+		
+	}
+	/* social media buttons*/
+	.fa {
+		padding: 10px;
+		font-size: 30px;
+		width: 50px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		align-items: center;
+		float: right;
+		margin: 7px;
+	}
+
+	.fa:hover {
+		opacity: 0.7;
+		text-decoration: none;
+		}
+
+	.fa-facebook {
+		background: #3B5998;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		}
+	.fa-instagram {
+		background: #cb2027;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		}
+	
+	/*Main section of the contact us form page. contains welcome message*/
+	.words {
+		background-color: #D3D3D3;
+		padding:20px;
+		color: #000000;
+		float: center;
+		text-align: center;
+		
+		}
+		
+	.center-block {
+		font-size:1.6em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width:50%;
+		}
+
+		
+	/*Code for contact page return to home page button*/
+	.goBack-btn {
+		background-color: red;
+		color: white;
+		font-size:20px;
+		padding:15px;
+		border-radius: 12px;
+		text-align:center;
+		text-decoration: none;
+		width:100%;
+		}
+	.goBack-btn:hover {
+		opacity: 0.6;
+		text-decoration: none;
+		}
+	.goback-btn:visited {
+		background-color: red;
+		color: white;
+		font-size:20px;
+		padding:15px;
+		border-radius: 12px;
+		text-align:center;
+		text-decoration: none;
+		width:100%;
+		}
+	/* Changing Text for Smaller screens*/
+	@media only screen and (max-width: 640px) {
+
+       
+    div >h1 {
+      font-size: 3.0em;
+	}
+    div >h2 {
+      font-size: 2.3em;
+   }
+    div>h3 {
+      font-size: 2.0em;
+   }
+    p {
+      font-size: 1.7em;
+   }
+}
