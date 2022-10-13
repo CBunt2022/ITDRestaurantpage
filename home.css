@@ -1,8 +1,8 @@
 /*	Chris  Bunting
 	Web design project 1
-	Home page CSS
+	Home/ gallery pages CSS
 	ITD 210
-	9/25/2022 */
+	10/1/2022 */
 	
 	/*most of the code from this pages will be used in following pages so they will have the same look*/
 	
@@ -20,25 +20,28 @@
 	}
 	
 	
-div > h1 {
-  font-size: 4.0em;
-  font-family: Arial, Helvetica, sans-serif;
-}
+	div > h1 {
+		font-size: 4.0em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
 
-div > h2 {
-  font-size: 2.8em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-div > h3 {
-  font-size: 2.2em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-  font-size: 2.0em;
-  font-family: Arial, Helvetica, sans-serif;
-  padding:20px;
-  }
+	div > h2 {
+		font-size: 2.8em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	div > h3 {
+		font-size: 2.2em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	div > h4 {
+		font-size: 2.0em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	p {
+		font-size: 2.0em;
+		font-family: Arial, Helvetica, sans-serif;
+		padding:20px;
+	}
 	
 	
 	/*restaurant logo*/
@@ -102,7 +105,7 @@ p {
 		color: white;
 		text-align: center;
 		}
-	/* code for open table button and link.  I wanted the link to open on a new page on desktop*/
+	/* code for open table button and link.  I wanted the link to open on a new page/tab on the desktop*/
 	.otable-btn {
 		background-color: red;
 		color: white;
@@ -128,8 +131,12 @@ p {
 		width:100%;
 		}
 	/*Code for footer area of page*/
+	.col-md-6 {
+		vertical-align:center;
+	}
+	
 	.bot {  
-		
+		vertical-align:center;
 		text-align: center;
 		margin: auto;
 		background-color: #000000;
@@ -145,26 +152,32 @@ p {
 	.addr {
 		text-align: left;
 		background-color: #000000;
-		padding: 0px 0px 10px 10px;
 		display: flex;
 		align-items: center;
+		vertical-align: center;
 		color: white;
 		float: left;
-		
-		
-	}
+		}	
+	
+	.social {
+		display:inline-block;
+		vertical-align: center;
+		padding:30px;
+		float: right;	
+		}
 	/* social media buttons*/
 	.fa {
 		padding: 10px;
 		font-size: 30px;
 		width: 50px;
 		color: white;
+		vertical-align:center;
 		text-align: center;
 		text-decoration: none;
 		align-items: center;
 		float: right;
 		margin: 7px;
-	}
+		}
 
 	.fa:hover {
 		opacity: 0.7;
@@ -185,15 +198,7 @@ p {
 		}
 	
 	/*Main section of the contact us form page. contains welcome message*/
-	.words {
-		background-color: #D3D3D3;
-		padding:20px;
-		color: #000000;
-		float: center;
-		text-align: center;
-		
-		}
-		
+			
 	.center-block {
 		font-size:1.6em;
 		display: block;
@@ -228,20 +233,141 @@ p {
 		text-decoration: none;
 		width:100%;
 		}
-	/* Changing Text for Smaller screens*/
+	/* Changing Text for small and mobile screens*/
 	@media only screen and (max-width: 640px) {
-
+	
        
     div >h1 {
       font-size: 3.0em;
 	}
     div >h2 {
       font-size: 2.3em;
-   }
+	}
     div>h3 {
       font-size: 2.0em;
-   }
+	}
+	div>h4 {
+      font-size: 1.2em;
+	}
     p {
-      font-size: 1.7em;
+      font-size: 1.6em;
+	}
+   .addr{
+	   padding: 0px;
+	}
+	
+	
+	 /* code to provide an additional decrease in the font size on the Menu page's "Chef's message" */
+   .row #chefmessage>h2 {
+	   font-size: 1.6em;
+	}
+		
+	}
+   /* Changing footer Text for Smaller screens*/
+	@media only screen and (max-width: 411px) {
+   
+   	div>h4 {
+      font-size: 1.1em;
+	}
+	.social{
+		padding:5px;
+	}
+	}
+	
+	/* Code for the footer area on the smallest phones (Galaxy Fold, etc)*/
+	@media only screen and (max-width: 346px) {
+   
+   	.bot{
+		padding: 5px;
+	}
+   
+      	div>h4 {
+      font-size: 1.1em;
+	  padding: 2px;
    }
-}
+	
+	.social{
+		padding:7px;
+		
+	}
+		
+	/* decreased the size of the social media icons*/
+	.fa {
+		padding: 4px;
+		font-size: 20px;
+		width: 30px;
+		color: white;
+		vertical-align:center;
+		text-align: center;
+		text-decoration: none;
+		align-items: center;
+		float: right;
+		margin: 2px;
+	}
+		
+	}
+		
+	/* Additional CSS code for Gallery slider */
+	/* I wanted background of gallery photo slider to be a little darker than default color.*/
+	.carousel {
+		background-color: #A9A9A9;
+	}
+/*code to increase size of images from bootstrap default width*/
+	.img-responsive{
+		width: 60%;
+	}
+
+	
+/* CSS Code for Menu page*/
+	
+	.menumessage {
+		background-color: #D3D3D3;
+		display: flex;
+		color: #000000;
+		text-align: center;
+		width:100%;
+			}
+		
+	div#menuphoto {
+		background-color: #D3D3D3;
+		display:inline-block;
+		vertical-align: center;
+		padding:20px;
+		float: right;
+		
+	}
+	.menuphoto2 {
+		display:inline-block;
+		width: 65%;
+		}
+
+	div#chefmessage {
+		background-color: #D3D3D3;
+		display:inline-block;
+		padding:30px;
+		color: #000000;
+		text-align: center;
+		vertical-align: center;
+		font-style: italic;
+		}
+		
+		
+	/* menu title box */
+	.menutitle {
+		background-color: #666666;
+		padding:20px;
+		color: white;
+		text-align: center;
+		}
+		
+	.descriptions {
+		background-color: #f8f8ff;
+		color: #000000;
+		padding:20px;
+		
+		
+			}	
+	.table table-striped{
+		text-align: center;
+	}
+		
