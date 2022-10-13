@@ -272,6 +272,13 @@
 	.social{
 		padding:5px;
 	}
+	
+	/*code to reduce the photo caption size on smaller screens*/
+	.carousel-caption >h3{
+		font-size: 1.2em;
+	}
+	
+	
 	}
 	
 	/* Code for the footer area on the smallest phones (Galaxy Fold, etc)*/
