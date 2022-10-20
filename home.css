@@ -233,100 +233,22 @@
 		text-decoration: none;
 		width:100%;
 		}
-	/* Changing Text for small and mobile screens*/
-	@media only screen and (max-width: 640px) {
-	
-       
-    div >h1 {
-      font-size: 3.0em;
-	}
-    div >h2 {
-      font-size: 2.3em;
-	}
-    div>h3 {
-      font-size: 2.0em;
-	}
-	div>h4 {
-      font-size: 1.2em;
-	}
-    p {
-      font-size: 1.6em;
-	}
-   .addr{
-	   padding: 0px;
-	}
-	
-	
-	 /* code to provide an additional decrease in the font size on the Menu page's "Chef's message" */
-   .row #chefmessage>h2 {
-	   font-size: 1.6em;
-	}
-		
-	}
-   /* Changing footer Text for Smaller screens*/
-	@media only screen and (max-width: 411px) {
-   
-   	div>h4 {
-      font-size: 1.1em;
-	}
-	.social{
-		padding:5px;
-	}
-	
-	/*code to reduce the photo caption size on smaller screens*/
-	.carousel-caption >h3{
-		font-size: 1.2em;
-	}
-	
-	
-	}
-	
-	/* Code for the footer area on the smallest phones (Galaxy Fold, etc)*/
-	@media only screen and (max-width: 346px) {
-   
-   	.bot{
-		padding: 5px;
-	}
-   
-      	div>h4 {
-      font-size: 1.1em;
-	  padding: 2px;
-   }
-	
-	.social{
-		padding:7px;
-		
-	}
-		
-	/* decreased the size of the social media icons*/
-	.fa {
-		padding: 4px;
-		font-size: 20px;
-		width: 30px;
-		color: white;
-		vertical-align:center;
-		text-align: center;
-		text-decoration: none;
-		align-items: center;
-		float: right;
-		margin: 2px;
-	}
-		
-	}
-		
-	/* Additional CSS code for Gallery slider */
+
+	/* Additional CSS code for Gallery page and slider */
 	/* I wanted background of gallery photo slider to be a little darker than default color.*/
 	.carousel {
 		background-color: #A9A9A9;
 	}
-/*code to increase size of images from bootstrap default width*/
+	/*code to increase size of images from bootstrap default width*/
 	.img-responsive{
 		width: 60%;
 	}
 
+
 	
+		
 /* CSS Code for Menu page*/
-	
+	/*Code for Chef message and menu page photo*/
 	.menumessage {
 		background-color: #D3D3D3;
 		display: flex;
@@ -366,15 +288,115 @@
 		color: white;
 		text-align: center;
 		}
-		
+	/* code for menu area*/	
 	.descriptions {
 		background-color: #f8f8ff;
 		color: #000000;
-		padding:20px;
+		padding:25px;
 		
-		
+	/* code to increase the table font size from the bootstrap default*/	
 			}	
-	.table table-striped{
-		text-align: center;
+	.list{
+		font-size: 1.5em;
+	/*Code for spacing fo the menu table columns*/
+	}
+	.th1 {
+		width:25%;
+		}
+	.th2 {
+		width:60%;
+	}
+	.th3 {
+		width:15%;
+	}	
+	
+	/* Changing Text for small and mobile screens*/
+	@media only screen and (max-width: 640px) {
+	
+       
+    div >h1 {
+      font-size: 3.0em;
+	}
+    div >h2 {
+      font-size: 2.3em;
+	}
+    div>h3 {
+      font-size: 2.0em;
+	}
+	div>h4 {
+      font-size: 1.2em;
+	}
+    p {
+      font-size: 1.6em;
+	}
+   .addr{
+	   padding: 0px;
+	}
+	
+	
+	 /* code to provide an additional decrease in the font size on the Menu page's "Chef's message" */
+   .row #chefmessage>h2 {
+	   font-size: 1.6em;
+	}
+	/*code to reduce menu item size with screen*/
+	.list{
+		font-size: 1.0em;
+	
+	}
+
+
+
+	}
+   /* Changing footer Text for Smaller screens*/
+	@media only screen and (max-width: 411px) {
+   
+   	div>h4 {
+      font-size: 1.1em;
+	}
+	.social{
+		padding:5px;
+	}
+	
+	/*code to reduce the photo caption size on smaller screens*/
+	.carousel-caption >h3{
+		font-size: 1.2em;
+	}
+	
+	
+	}
+	
+	/* Code for the footer area on the smallest phones (Galaxy Fold, etc)*/
+	@media only screen and (max-width: 346px) {
+   
+   	.bot{
+		padding: 5px;
+	}
+   
+    div>h4 {
+		font-size: 1.1em;
+		padding: 2px;
+   }
+	
+	.social{
+		padding:7px;
+		
 	}
 		
+	/* decreased the size of the social media icons*/
+	.fa {
+		padding: 4px;
+		font-size: 20px;
+		width: 30px;
+		color: white;
+		vertical-align:center;
+		text-align: center;
+		text-decoration: none;
+		align-items: center;
+		float: right;
+		margin: 2px;
+	}
+		
+	}
+		
+
+
